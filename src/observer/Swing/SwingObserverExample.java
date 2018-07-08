@@ -1,9 +1,9 @@
 package observer.Swing;
 	
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.event.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 	
 public class SwingObserverExample {
 	JFrame frame;
@@ -21,7 +21,6 @@ public class SwingObserverExample {
 		button.addActionListener(new DevilListener());
 		frame.getContentPane().add(BorderLayout.CENTER, button);
 
-		// Set frame properties 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(BorderLayout.CENTER, button);
 		frame.setSize(300,300);

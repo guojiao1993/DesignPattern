@@ -32,4 +32,5 @@ public class WeatherData extends Observable {
 	public float getPressure() {
 		return pressure;
 	}
+
 }
